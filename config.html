@@ -10,9 +10,9 @@
 
     <h3>A Block Class</h3>
     <input id="configureByDayType_A" type="checkbox" onchange="showConfiguredClassInputs_A();">
-      <label>Configure class by day type</label>
+      <label class="configure_checkbox">Configure class by day type</label>
     </input>
-
+    <br />
     <input class="default_class" id="class_A" type="text"></input>
 
     <input class="configured_class" id="class_A_ADay" type="text">
@@ -48,11 +48,6 @@
     </input>
     <br />
 
-    <!--<script type="text/javascript" src="./config.js"></script>-->
-    <script>
-      document.getElementById("configureByDayType_A").addEventListener('onchange', function(){
-        document.getElementById("class_A_ADay").style.display = this.checked ? "inline-block" : "none";
-      });
-    </script>
+    <script type="text/javascript" src="./config.js"></script>
   </body>
 </html>

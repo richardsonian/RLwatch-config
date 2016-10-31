@@ -1,14 +1,8 @@
-var configureCheckbox_A = document.getElementById("configureByDayType_A");
-var configuredClassInputs_A = document.getElementsByClassName("configured_class");
-configureCheckbox_A.addEventListener("oninput", funciton() {
-  if(configureCheckbox_A.checked) {
-    for(int i=0; i<configuredClassInputs_A.length; i++) {
-      configuredClassInputs_A[0].style.display = "inline-block";
-    }
+document.getElementById("configureByDayType_A").onchange = function(){
+  for(var i=0; i<document.getElementsByClassName("configured_class").length; i++){
+    document.getElementsByClassName("configured_class")[i].style.display = this.checked ? "inline-block" : "none";
   }
-  else  {
-    for(int i=0; i<configuredClassInputs_A.length; i++) {
-      configuredClassInputs_A[0].style.display = "inline-block";
-    }
+  for(var i=0; i<document.getElementsByClassName("default_class").length; i++){
+    document.getElementsByClassName("default_class")[i].style.display = this.checked ? "none" : "inline-block";
   }
-});
+};

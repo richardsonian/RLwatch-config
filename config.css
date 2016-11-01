@@ -1,20 +1,17 @@
 h3 {
   display: inline-block;
 }
-
-label {
-  display: inline-block;
-}
-
 input[type="text"] {
   display: inline-block;
   padding:0.25em;
   margin:0.5em;
 }
 
-input[type="checkbox"] {
-  display: inline-block;
+input[type=checkbox] {
+  display:inline-block;
+  transform: scale(1.5);
 }
-input.configured_class, label.configured_class {
+
+span.dayConfigGroup {
   display: none;
 }

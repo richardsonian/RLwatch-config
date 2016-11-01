@@ -1,8 +1,9 @@
-document.getElementById("configureByDayType_A").onchange = function(){
-  for(var i=0; i<document.getElementsByClassName("configured_class").length; i++){
-    document.getElementsByClassName("configured_class")[i].style.display = this.checked ? "inline-block" : "none";
-  }
-  for(var i=0; i<document.getElementsByClassName("default_class").length; i++){
-    document.getElementsByClassName("default_class")[i].style.display = this.checked ? "none" : "inline-block";
-  }
+var dayConfigGroup_A = document.getElementById("dayConfigGroup_A");
+var defaultClass_A = document.getElementById("defaultClass_A");
+var showDayConfig_A = document.getElementById("showDayConfig_A");
+
+
+showDayConfig_A.onchange = function(){
+  dayConfigGroup_A.style.display = showDayConfig_A.checked ? "inline-block" : "none";
+  defaultClass_A.style.display = showDayConfig_A.checked ? "none" : "block";
 };

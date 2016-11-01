@@ -2,51 +2,100 @@
 
 <html>
   <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>RLwatch Config</title>
     <link rel="stylesheet" type="text/css" href="./config.css"/>
   </head>
   <body>
-    <h1>Set Classes</h1>
+    <!--header-->
+    <h1 id="test">Set Classes</h1>
 
+    <!--A Block Classes-->
     <h3>A Block Class</h3>
-    <input id="configureByDayType_A" type="checkbox" onchange="showConfiguredClassInputs_A();">
-      <label class="configure_checkbox">Configure class by day type</label>
-    </input>
-    <br />
-    <input class="default_class" id="class_A" type="text"></input>
+    <span class="ClassGroup">
 
-    <input class="configured_class" id="class_A_ADay" type="text">
-      <label class="configured_class">A Day Class</label>
-    </input>
-    <br />
-    <input class="configured_class" id="class_A_BDay" type="text">
-      <label class="configured_class">B Day Class</label>
-    </input>
-    <br />
-    <input class="configured_class" id="class_A_CDay" type="text">
-      <label class="configured_class">C Day Class</label>
-    </input>
-    <br />
-    <input class="configured_class" id="class_A_DDay" type="text">
-      <label class="configured_class">D Day Class</label>
-    </input>
-    <br />
-    <input class="configured_class" id="class_A_EDay" type="text">
-      <label class="configured_class">E Day Class</label>
-    </input>
-    <br />
-    <input class="configured_class" id="class_A_FDay" type="text">
-      <label class="configured_class">F Day Class</label>
-    </input>
-    <br />
-    <input class="configured_class" id="class_A_GDay" type="text">
-      <label class="configured_class">G Day Class</label>
-    </input>
-    <br />
-    <input class="configured_class" id="class_A_HDay" type="text">
-      <label class="configured_class">H Day Class</label>
-    </input>
-    <br />
+      <span class="showDayConfig_checkbox">
+        <input id="showDayConfig_A" type="checkbox">
+          <label>Configure class by day type</label>
+        </input>
+      </span>
+
+      <br />
+
+      <span class="defaultClass" id="defaultClass_A">
+        <input class="defaultClass_input" id="class_A_default" type="text"></input>
+      </span>
+
+      <span class="dayConfigGroup" id="dayConfigGroup_A">
+
+        <span class="dayConfig">
+          <input class="dayConfigClass_input" id="class_A_ADay" type="text">
+            <label class="configured_class">A Day Class</label>
+          </input>
+        </span>
+
+        <br />
+
+        <span class="dayConfig">
+          <input class="dayConfigClass_input" id="class_A_BDay" type="text">
+            <label class="configured_class">B Day Class</label>
+          </input>
+        </span>
+
+        <br />
+
+        <span class="dayConfig">
+          <input class="dayConfigClass_input" id="class_A_CDay" type="text">
+            <label class="configured_class">C Day Class</label>
+          </input>
+        </span>
+
+        <br />
+
+        <span class="dayConfig">
+          <input class="dayConfigClass_input" id="class_A_DDay" type="text">
+            <label class="configured_class">D Day Class</label>
+          </input>
+        </span>
+
+        <br />
+
+        <span class="dayConfig">
+          <input class="dayConfigClass_input" id="class_A_EDay" type="text">
+            <label class="configured_class">E Day Class</label>
+          </input>
+        </span>
+
+        <br />
+
+        <span class="dayConfig">
+          <input class="dayConfigClass_input" id="class_A_FDay" type="text">
+            <label class="configured_class">F Day Class</label>
+          </input>
+        </span>
+
+        <br />
+
+        <span class="dayConfig">
+          <input class="dayConfigClass_input" id="class_A_GDay" type="text">
+            <label class="configured_class">G Day Class</label>
+          </input>
+        </span>
+
+        <br />
+
+        <span class="dayConfig">
+          <input class="dayConfigClass_input" id="class_A_HDay" type="text">
+            <label class="configured_class">H Day Class</label>
+          </input>
+        </span>
+
+        <br />
+
+      </span>
+
+    </span>
 
     <script type="text/javascript" src="./config.js"></script>
   </body>

@@ -15,3 +15,7 @@ input[type=checkbox] {
 span.dayConfigGroup {
   display: none;
 }
+
+#showDayConfig_A:checked ~ #dayConfigGroup_A{
+  display: block;
+}

@@ -1,17 +1,29 @@
+/*general*/
 h3 {
   display: inline-block;
 }
+
+/*input styling*/
 input[type="text"] {
   display: inline-block;
   padding:0.25em;
   margin:0.5em;
 }
 
+/*scale checkbox*/
 input[type=checkbox] {
   display:inline-block;
   transform: scale(1.5);
 }
 
+/*Show/hide dayConfig*/
 span.dayConfigGroup {
   display: none;
+}
+
+#showDayConfig_A:checked ~ #dayConfigGroup_A{
+  display: block;
+}
+#showDayConfig_A:checked ~ #defaultClass_A{
+  display:none;
 }

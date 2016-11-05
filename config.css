@@ -17,7 +17,7 @@ input[type=checkbox] {
 }
 
 /*Show/hide dayConfig*/
-span.dayConfigGroup {
+div.dayConfigGroup {
   display: none;
 }
 

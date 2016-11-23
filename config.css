@@ -13,9 +13,9 @@ h3 {
 
 .classGroup {
   background-color: #4b4c5a;
-  border-radius: 10px;
+  border-radius: 1em;
   color:white;
-  margin-bottom:1em;
+  margin-bottom:0.6em;
 }
 .classBody{
 
@@ -27,7 +27,7 @@ label {
   font-size: 0.75em;
 }
 /*input styling*/
-input[type="text"] {
+input[type=text] {
   display: inline-block;
   padding:0.25em;
   margin:0.5em;
@@ -38,7 +38,19 @@ input[type=checkbox] {
   display:inline-block;
   transform: scale(1.5);
 }
-
+/*button*/
+input[type=button] {
+    background-color: #FF9100;
+    border:none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Crete Round';
+    font-size: 2em;
+    width:8em;
+    border-radius:1em;
+}
 
 /*Show/hide dayConfig*/
 .dayConfigGroup {

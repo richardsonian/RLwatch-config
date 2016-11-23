@@ -1,11 +1,11 @@
 /*///general///*/
 body{
   background-color: lightgray;
-  font-family:fantasy;
+  font-family:'Crete Round';
   text-align: center;
 }
 h1{
-
+  margin-bottom:0.2em;
 }
 h3 {
   display: inline-block;
@@ -15,7 +15,7 @@ h3 {
   background-color: #4b4c5a;
   border-radius: 10px;
   color:white;
-  -webkit-text-stroke: 1px black;
+  margin-bottom:1em;
 }
 .classBody{
 
@@ -23,7 +23,9 @@ h3 {
 .dayConfigGroup{
 
 }
-
+label {
+  font-size: 0.75em;
+}
 /*input styling*/
 input[type="text"] {
   display: inline-block;
@@ -43,9 +45,66 @@ input[type=checkbox] {
   display: none;
 }
 
+/*A Block*/
 #showDayConfig_A:checked ~ .classBody > #dayConfigGroup_A{
   display: block;
 }
 #showDayConfig_A:checked ~ .classBody > #defaultClass_A {
+  display:none;
+}
+
+/*B Block*/
+#showDayConfig_B:checked ~ .classBody > #dayConfigGroup_B{
+  display: block;
+}
+#showDayConfig_B:checked ~ .classBody > #defaultClass_B {
+  display:none;
+}
+
+/*C Block*/
+#showDayConfig_C:checked ~ .classBody > #dayConfigGroup_C{
+  display: block;
+}
+#showDayConfig_C:checked ~ .classBody > #defaultClass_C {
+  display:none;
+}
+
+/*D Block*/
+#showDayConfig_D:checked ~ .classBody > #dayConfigGroup_D{
+  display: block;
+}
+#showDayConfig_D:checked ~ .classBody > #defaultClass_D {
+  display:none;
+}
+
+/*E Block*/
+#showDayConfig_E:checked ~ .classBody > #dayConfigGroup_E{
+  display: block;
+}
+#showDayConfig_E:checked ~ .classBody > #defaultClass_E {
+  display:none;
+}
+
+/*F Block*/
+#showDayConfig_F:checked ~ .classBody > #dayConfigGroup_F{
+  display: block;
+}
+#showDayConfig_F:checked ~ .classBody > #defaultClass_F {
+  display:none;
+}
+
+/*G Block*/
+#showDayConfig_G:checked ~ .classBody > #dayConfigGroup_G{
+  display: block;
+}
+#showDayConfig_G:checked ~ .classBody > #defaultClass_G {
+  display:none;
+}
+
+/*H Block*/
+#showDayConfig_H:checked ~ .classBody > #dayConfigGroup_H{
+  display: block;
+}
+#showDayConfig_H:checked ~ .classBody > #defaultClass_H {
   display:none;
 }

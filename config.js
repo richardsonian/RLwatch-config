@@ -6,18 +6,17 @@ var dom = {
 };
 
 dom.submitButton.addEventListener('click', function() {
-  var classString[8];
+  var classString = [];
 
   for(var i=0; i<8; i++) {
     if(!dom.dayConfigCheckboxes[i].checked) {
-      classString[i] = defaultClasses[i].value.concat('|'.concat(defaultClasses[i].value).repeat(7));
-      console.log(classString[i]);
+      classString[i] = dom.defaultClasses[i].value.concat('|'.concat(dom.defaultClasses[i].value).repeat(7));
     }
     else {
-      classString[i]=dayConfigClasses[i*8];
+      classString[i] = dom.dayConfigClasses[i*8].value;
       for(var k=1; k<8; k++) {
-        classString[i].concat('|');
-        classString[i].concat(classString[i].concat(dayConfigClasses[(i*8)+k]));
+        classString[i] = classString[i].concat('|');
+        classString[i] = classString[i].concat(dom.dayConfigClasses[(i*8)+k].value);
       }
     }
     console.log(classString[i]);

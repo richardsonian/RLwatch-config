@@ -1,2 +1,2 @@
-# RLwatch-config
-Hosted Config page for the RLwatch pebble watchface.
+# RLwatch
+Pebble watchapp for tracking the RL schedule

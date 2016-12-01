@@ -1,5 +1,5 @@
-# RLwatch
-Pebble watchapp for tracking the RL schedule
+# RLwatch-config
+HTML config page for RLwatch pebble watchface
 
 ## Notes:
 - _very_ rough

@@ -1,0 +1,75 @@
+{
+    "author": "Ian Richardson",
+    "dependencies": {},
+    "keywords": [],
+    "name": "rlwatch",
+    "pebble": {
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "RLwatch",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "PURPOSE",
+            "PERIOD_ZERO",
+            "PERIOD_ONE",
+            "PERIOD_TWO",
+            "PERIOD_THREE",
+            "PERIOD_FOUR",
+            "PERIOD_FIVE",
+            "PERIOD_SIX",
+            "PERIOD_SEVEN",
+            "PERIOD_EIGHT",
+            "PERIOD_NINE",
+            "PERIOD_TEN",
+            "CLASS_A",
+            "CLASS_B",
+            "CLASS_C",
+            "CLASS_D",
+            "CLASS_E",
+            "CLASS_F",
+            "CLASS_G",
+            "CLASS_H",
+            "PERIOD_DATE"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/roxburyhomescreenicon (25x25).png",
+                    "menuIcon": true,
+                    "name": "IMAGE_RL_ICON_PNG_25",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "fonts/RobotoCondensed-Bold.ttf",
+                    "name": "FONT_ROBOTO_CONDENSED_BOLD_18",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/RobotoCondensed-Bold.ttf",
+                    "name": "FONT_ROBOTO_CONDENSED_BOLD_16",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Roboto-Bold.ttf",
+                    "name": "FONT_ROBOTO_BOLD_48",
+                    "targetPlatforms": null,
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "basalt"
+        ],
+        "uuid": "6f85bdae-a182-48f3-84f9-282374f73179",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}

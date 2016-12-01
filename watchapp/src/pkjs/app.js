@@ -132,7 +132,7 @@ var readyDict = {
 
 Pebble.addEventListener('showConfiguration', function() {
   console.log("Config opened");
-  var url = 'https://richardsonian.github.io/RLwatch-config/config.html';
+  var url = 'https://richardsonian.github.io/RLwatch/config';
   Pebble.openURL(url);
 });
 Pebble.addEventListener('webviewclosed', function(e) {

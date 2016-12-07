@@ -26,7 +26,7 @@ dom.submitButton.addEventListener('click', function() {
       }
       console.log(classString[i]);
     }
-  
+    options.classUpdate = 1;
     options.ABlockClasses = classString[0];
     options.BBlockClasses = classString[1];
     options.CBlockClasses = classString[2];

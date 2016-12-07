@@ -4,8 +4,13 @@ body{
   font-family:'Crete Round';
   text-align: center;
 }
-h1{
-  margin-bottom:0.2em;
+h1 {
+  margin:0;
+}
+h2{
+  display:inline-block;
+  margin:0;
+  margin-right:0.6em;
 }
 h3 {
   display: inline-block;
@@ -15,6 +20,13 @@ h3 {
   background-color: #4b4c5a;
   border-radius: 1em;
   color:white;
+  margin-bottom:0.6em;
+  display:none;
+}
+.configSection {
+  background-color:darkgray;
+  border-radius:1em;
+  padding:0.6em;
   margin-bottom:0.6em;
 }
 .classBody{
@@ -38,6 +50,7 @@ input[type=checkbox] {
   display:inline-block;
   transform: scale(1.5);
 }
+
 /*button*/
 input[type=button] {
     background-color: #FF9100;
@@ -50,6 +63,10 @@ input[type=button] {
     font-size: 2em;
     width:8em;
     border-radius:1em;
+}
+/*show/hide sections*/
+#showClassConfig:checked ~ .classGroup{
+  display: block;
 }
 
 /*Show/hide dayConfig*/

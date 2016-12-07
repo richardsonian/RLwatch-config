@@ -1,38 +1,45 @@
 var dom = {
+  'showClassConfig':document.getElementById("showClassConfig"),
   'dayConfigCheckboxes': document.querySelectorAll('input[type=checkbox]'),
   'submitButton': document.getElementById("submit_button"),
   'defaultClasses': document.querySelectorAll('input.defaultClass_input'),
-  'dayConfigClasses': document.querySelectorAll('input.dayConfigClass_input')
+  'dayConfigClasses': document.querySelectorAll('input.dayConfigClass_input'),
+  'schedulePull': document.getElementById('schedulePull')
 };
+var options = {};
 
 dom.submitButton.addEventListener('click', function() {
-  var classString[8];
-
-  for(var i=0; i<8; i++) {
-    if(!dom.dayConfigCheckboxes[i].checked) {
-      classString[i] = defaultClasses[i].value.concat('|'.concat(defaultClasses[i].value).repeat(7));
+  if(dom.showClassConfig.checked) {
+    var classString = [];
+  
+    for(var i=0; i<8; i++) {
+      if(!dom.dayConfigCheckboxes[i].checked) {
+        classString[i] = dom.defaultClasses[i].value.concat('|'.concat(dom.defaultClasses[i].value).repeat(7));
+        console.log(classString[i]);
+      }
+      else {
+        classString[i]=dom.dayConfigClasses[i*8];
+        for(var k=1; k<8; k++) {
+          classString[i].concat('|');
+          classString[i].concat(classString[i].concat(dom.dayConfigClasses[(i*8)+k]));
+        }
+      }
       console.log(classString[i]);
     }
-    else {
-      classString[i]=dayConfigClasses[i*8];
-      for(var k=1; k<8; k++) {
-        classString[i].concat('|');
-        classString[i].concat(classString[i].concat(dayConfigClasses[(i*8)+k]));
-      }
-    }
-    console.log(classString[i]);
-  }
+  
+    options.ABlockClasses = classString[0];
+    options.BBlockClasses = classString[1];
+    options.CBlockClasses = classString[2];
+    options.DBlockClasses = classString[3];
+    options.EBlockClasses = classString[4];
+    options.FBlockClasses = classString[5];
+    options.GBlockClasses = classString[6];
+    options.HBlockClasses = classString[7];
 
-  var options = {
-    'ABlockClasses': classString[0],
-    'BBlockClasses': classString[1],
-    'CBlockClasses': classString[2],
-    'DBlockClasses': classString[3],
-    'EBlockClasses': classString[4],
-    'FBlockClasses': classString[5],
-    'GBlockClasses': classString[6],
-    'HBlockClasses': classString[7],
-  };
+  }
+  if(dom.schedulePull.checked) {
+    options.pullSchedule = 1;
+  }
 
 
   // Determine the correct return URL (emulator vs real watch)

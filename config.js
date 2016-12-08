@@ -9,6 +9,10 @@ var dom = {
 var options = {};
 
 dom.submitButton.addEventListener('click', function() {
+<<<<<<< HEAD
+=======
+  if(dom.showClassConfig.checked) {
+>>>>>>> 229b30852c569357dbae8d8ab7a321361e1addde
     var classString = [];
   
     for(var i=0; i<8; i++) {
@@ -35,18 +39,18 @@ dom.submitButton.addEventListener('click', function() {
     options.GBlockClasses = classString[6];
     options.HBlockClasses = classString[7];
 
+<<<<<<< HEAD
   
+=======
+  }
+>>>>>>> 229b30852c569357dbae8d8ab7a321361e1addde
   if(dom.schedulePull.checked) {
     options.pullSchedule = 1;
   }
 
-  var return_to = getQueryParam('return_to', 'pebblejs://close#');
-  // Encode and send the data when the page closes
-  document.location = return_to + encodeURIComponent(JSON.stringify(options));
-});
 
-// Determine the correct return URL (emulator vs real watch)
-function getQueryParam(variable, defaultValue) {
+  // Determine the correct return URL (emulator vs real watch)
+  function getQueryParam(variable, defaultValue) {
     var query = location.search.substring(1);
     var vars = query.split('&');
     for (var i = 0; i < vars.length; i++) {
@@ -57,3 +61,8 @@ function getQueryParam(variable, defaultValue) {
     }
     return defaultValue || false;
   }
+  var return_to = getQueryParam('return_to', 'pebblejs://close#');
+
+  // Encode and send the data when the page closes
+  document.location = return_to + encodeURIComponent(JSON.stringify(options));
+});

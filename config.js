@@ -10,7 +10,10 @@ var options = {};
 
 dom.submitButton.addEventListener('click', function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 229b30852c569357dbae8d8ab7a321361e1addde
   if(dom.showClassConfig.checked) {
 >>>>>>> 229b30852c569357dbae8d8ab7a321361e1addde
     var classString = [];
@@ -40,7 +43,11 @@ dom.submitButton.addEventListener('click', function() {
     options.HBlockClasses = classString[7];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   
+=======
+  }
+>>>>>>> 229b30852c569357dbae8d8ab7a321361e1addde
 =======
   }
 >>>>>>> 229b30852c569357dbae8d8ab7a321361e1addde

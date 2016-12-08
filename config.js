@@ -10,10 +10,11 @@ var dom = {
 var options = {};
 
 dom.submitButton.addEventListener('click', function() {
+  if(dom.showClassConfig.checked) {
     var classString = [];
   
     for(var i=0; i<8; i++) {
-      if(!dom.dayConfigCheckboxes[i].checked) {
+      if(!dom.dayConfigCheckboxes[i+1].checked) {
         classString[i] = dom.defaultClasses[i].value.concat('|'.concat(dom.defaultClasses[i].value).repeat(7));
         console.log(classString[i]);
       }
@@ -35,7 +36,7 @@ dom.submitButton.addEventListener('click', function() {
     options.FBlockClasses = classString[5];
     options.GBlockClasses = classString[6];
     options.HBlockClasses = classString[7];
-
+  }
   if(dom.schedulePull.checked) {
     options.pullSchedule = 1;
   }

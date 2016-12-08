@@ -1,6 +1,6 @@
 var dom = {
   'showClassConfig':document.getElementById("showClassConfig"),
-  'dayConfigCheckboxes': document.querySelectorAll('input[type=checkbox]'),
+  'dayConfigCheckboxes': document.querySelectorAll('input.showDayConfig'),
   'submitButton': document.getElementById("submit_button"),
   'defaultClasses': document.querySelectorAll('input.defaultClass_input'),
   'dayConfigClasses': document.querySelectorAll('input.dayConfigClass_input'),
@@ -14,7 +14,7 @@ dom.submitButton.addEventListener('click', function() {
     var classString = [];
   
     for(var i=0; i<8; i++) {
-      if(!dom.dayConfigCheckboxes[i+1].checked) {
+      if(!dom.dayConfigCheckboxes[i].checked) {
         classString[i] = dom.defaultClasses[i].value.concat('|'.concat(dom.defaultClasses[i].value).repeat(7));
         console.log(classString[i]);
       }
@@ -37,6 +37,7 @@ dom.submitButton.addEventListener('click', function() {
     options.GBlockClasses = classString[6];
     options.HBlockClasses = classString[7];
   }
+  
   if(dom.schedulePull.checked) {
     options.pullSchedule = 1;
   }

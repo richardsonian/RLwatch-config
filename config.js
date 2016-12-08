@@ -6,16 +6,10 @@ var dom = {
   'dayConfigClasses': document.querySelectorAll('input.dayConfigClass_input'),
   'schedulePull': document.getElementById('schedulePull')
 };
+
 var options = {};
 
 dom.submitButton.addEventListener('click', function() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 229b30852c569357dbae8d8ab7a321361e1addde
-  if(dom.showClassConfig.checked) {
->>>>>>> 229b30852c569357dbae8d8ab7a321361e1addde
     var classString = [];
   
     for(var i=0; i<8; i++) {
@@ -42,15 +36,6 @@ dom.submitButton.addEventListener('click', function() {
     options.GBlockClasses = classString[6];
     options.HBlockClasses = classString[7];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  
-=======
-  }
->>>>>>> 229b30852c569357dbae8d8ab7a321361e1addde
-=======
-  }
->>>>>>> 229b30852c569357dbae8d8ab7a321361e1addde
   if(dom.schedulePull.checked) {
     options.pullSchedule = 1;
   }

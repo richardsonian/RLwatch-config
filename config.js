@@ -9,7 +9,6 @@ var dom = {
 var options = {};
 
 dom.submitButton.addEventListener('click', function() {
-  
   if(dom.showClassConfig.checked) {
     var classString = [];
   
@@ -38,18 +37,13 @@ dom.submitButton.addEventListener('click', function() {
     options.HBlockClasses = classString[7];
 
   }
-  
   if(dom.schedulePull.checked) {
     options.pullSchedule = 1;
   }
 
-  var return_to = getQueryParam('return_to', 'pebblejs://close#');
-  // Encode and send the data when the page closes
-  document.location = return_to + encodeURIComponent(JSON.stringify(options));
-});
 
-// Determine the correct return URL (emulator vs real watch)
-function getQueryParam(variable, defaultValue) {
+  // Determine the correct return URL (emulator vs real watch)
+  function getQueryParam(variable, defaultValue) {
     var query = location.search.substring(1);
     var vars = query.split('&');
     for (var i = 0; i < vars.length; i++) {
@@ -60,3 +54,8 @@ function getQueryParam(variable, defaultValue) {
     }
     return defaultValue || false;
   }
+  var return_to = getQueryParam('return_to', 'pebblejs://close#');
+
+  // Encode and send the data when the page closes
+  document.location = return_to + encodeURIComponent(JSON.stringify(options));
+});
